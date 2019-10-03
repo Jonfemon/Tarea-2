@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author diego
  */
-@WebServlet(name = "Hello", urlPatterns = {"/Hello"})
-public class Hello extends HttpServlet {
+@WebServlet(name = "Bonjour", urlPatterns = {"/Bonjour"})
+public class Bonjour extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -40,7 +40,7 @@ public class Hello extends HttpServlet {
             out.println("<title>Saludando en diferentes idiomas</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Hello " + request.getParameter("nombre") + "!!</h1>");
+            out.println("<h1>Bonjour " + request.getParameter("nombre") + "!!</h1>");
             out.println("</body>");
             out.println("</html>");
         }
